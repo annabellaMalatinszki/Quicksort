@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quicksort"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="QuickSort" Height="400" Width="300">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="QuickSort" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
+                <TextBlock Text="Sortable list" Margin="10,10,10,0"/>
+                <TextBox x:Name="sortableTextBox" Margin="10" Height="180"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+                <TextBlock Text="Result" Margin="10,10,10,0"/>
+                <TextBox x:Name="resultTextBox" Margin="10" Height="180"/>
+                <Button Content="Start" Margin="10" MaxWidth="100"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
