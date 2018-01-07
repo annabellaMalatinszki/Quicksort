@@ -30,7 +30,7 @@ namespace Quicksort
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Quicksorter.QuickSort();
+            Quicksorter.QuickSort(toSort, 0, toSort.Length - 1);
             resultListView.ItemsSource = toSort;
         }
     }
