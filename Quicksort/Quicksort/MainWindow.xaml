@@ -1,0 +1,33 @@
+﻿<Window x:Class="Quicksort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quicksort"
+        mc:Ignorable="d"
+        Title="QuickSort" Height="400" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="QuickSort" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
+                <TextBlock Text="Sortable list" Margin="10,10,10,0"/>
+                <ListView x:Name="sortableListView" Margin="10" Height="190">
+                </ListView>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+                <TextBlock Text="Result" Margin="10,10,10,0"/>
+                <ListView x:Name="resultListView" Margin="10" Height="190">
+                </ListView>
+                <Button Content="Start" Margin="10" MaxWidth="100" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
