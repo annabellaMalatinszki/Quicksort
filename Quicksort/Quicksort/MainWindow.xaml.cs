@@ -27,5 +27,11 @@ namespace Quicksort
             InitializeComponent();
             sortableListView.ItemsSource = toSort;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Quicksorter.QuickSort();
+            resultListView.ItemsSource = toSort;
+        }
     }
 }
