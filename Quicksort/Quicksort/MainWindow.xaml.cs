@@ -20,9 +20,12 @@ namespace Quicksort
     /// </summary>
     public partial class MainWindow : Window
     {
+        static int[] toSort = new int[] { 9, 8, 1, 2, 3, 4, 7, 6, 5 };
+
         public MainWindow()
         {
             InitializeComponent();
+            sortableListView.ItemsSource = toSort;
         }
     }
 }

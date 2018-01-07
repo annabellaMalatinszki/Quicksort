@@ -19,12 +19,14 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
                 <TextBlock Text="Sortable list" Margin="10,10,10,0"/>
-                <TextBox x:Name="sortableTextBox" Margin="10" Height="180"/>
+                <ListView x:Name="sortableListView" Margin="10" Height="190">
+                </ListView>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
                 <TextBlock Text="Result" Margin="10,10,10,0"/>
-                <TextBox x:Name="resultTextBox" Margin="10" Height="180"/>
-                <Button Content="Start" Margin="10" MaxWidth="100"/>
+                <ListView x:Name="resultListView" Margin="10" Height="190">
+                </ListView>
+                <Button Content="Start" Margin="10" MaxWidth="100" Click="Button_Click"/>
             </StackPanel>
         </Grid>
     </Grid>
